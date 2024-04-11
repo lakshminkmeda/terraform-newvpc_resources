@@ -12,3 +12,6 @@ The following code creates the following resources:
 Pre-requisites:
   - Create a Key pair in AWS and save the key file in the same location along with the main.tf file
   - The code uses the name "terraform-demo.pem", you may use a custom name which requires a change in key_pair value in main.tf under AWS_INSTANCES
+
+The variable.tf is for adding any variables in future with a test variable to name the ec2 instance (currently unused). The user data script can be added directly to the main code, a separate file is usually not necessary but used to 
+improve the code and future usability.
